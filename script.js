@@ -29,23 +29,46 @@ $(document).ready(function() {
 	}
 	
 	//shuffle the deck
+	var newDeck = _.shuffle(deck);
 	
-	
-	var cards_player_1 = [];
-	var cards_player_2 = [];
+	var cards_player_1 = [newDeck.slice(0[,27])];
+	var cards_player_2 = [newDeck.slice(27[,53])];
 	//divide out the cards into the two arrays
 	
 	
 	//create a function (algorithm) called "war" that takes two cards as parameters, compares them and returns a winner. A tie should return false.
-	function war() {
+	function war(player1,player2) {
+		if (player1 === player2) {
+			return false;
+		}
+		else if () {
+			return player1
+		}
+		else if (player2 > player1) {
+			return player2
+		}
 	}
 	
+		/*switch (player1,player2) {
+			case player1 > player2:
+				return player1;
+				break;
+			case player2 > player1:
+				return player2;
+				break;
+			default:
+				return false;
+				break;
+
+		}*/
 	
 	//create a play function
 		//compare the cards
 		//give the winner both cards (at end of deck)
-	function play() {
-		
+	function play(war) {
+		if (player1) {
+			cards_player_1.splice
+		}
 		//this function (defined below) will continue to the next turn
 		advance();
 	}
